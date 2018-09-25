@@ -1,0 +1,161 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+    <title>Registration - Dodge</title>
+    <meta charset="uft-8" />
+    <link rel="stylesheet" href="../assets/normalization1.css" />
+    <script src="../js/Registration.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="../assets/Images/Bam.png" alt="Bam" height="150" width="150" />
+        <img src="../assets/Images/Kapow.png" alt="Kapow" height="150" width="150" />
+        <span>Toon Comic Shop</span>
+        <img src="../assets/Images/Kapow.png" alt="Kapow" height="150" width="150" />
+        <img src="../assets/Images/Bam.png" alt="Bam" height="150" width="150" />
+        <br>
+    </header>
+
+    <nav>
+        <fieldset>
+            <legend>Home</legend>
+
+            <ul>
+                <li><a href="/">Menu</a></li>
+                <li><a href="/Registration">Registration</a></li>
+            </ul>
+
+        </fieldset>
+    </nav>
+
+
+    <div class="Error">
+        <fieldset>
+            <p>
+                Error Messages:
+                <br>
+                <br>
+                <span id="errorMessage"></span>
+            </p>
+        </fieldset>
+    </div>
+
+    <form id="Registration" method="POST" action = "/Login" onsubmit="return formVal(this);">
+
+        <div class="Main">
+            <fieldset>
+                <legend>Account Information</legend>
+                <p>
+                    <label for="txtEmail" id="lblEmail">Email Address: </label>
+                    <input type="email" name="Email" id="txtEmail" size="30" maxlength="30" placeholder="JohnSmith@gmail.com" />
+                </p>
+
+                <p>
+                    <label for="txtUsername" id="lblUsername">Username:</label>
+                    <input type="text" name="Username" id="txtUsername" size="30" maxlength="30" />
+                </p>
+
+                <p>
+                    <label for="txtPassword" id="lblPassword">Password:</label>
+                    <input type="password" name="Password" id="txtPassword" size="30" maxlength="30" />
+                </p>
+
+                <p>
+                    <label for="txtRePassword" id="lblRePassword">Re-Enter Password:</label>
+                    <input type="password" name="RePassword" id="txtRePassword" size="30" maxlength="30" />
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <p>
+                    <label for="txtFirstName" id="lblFirstName">First Name:</label>
+                    <input type="text" name="FirstName" id="txtFirstName" size="30" maxlength="30" placeholder="John" />
+                </p>
+
+                <p>
+                    <label for="txtLastName" id="lblLastName">Last Name:</label>
+                    <input type="text" name="LastName" id="txtLastName" size="30" maxlength="30" placeholder="Smith" />
+                </p>
+
+                <p>
+                    <label for="telPhoneNum" id="lblPhoneNum">Phone Number:</label>
+                    <input type="tel" name="PhoneNum" id="telPhoneNum" size="12" maxlength="12" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Shipping Address</legend>
+                <p>
+                    <label for="numUnit" id="lblUnit">Unit #: </label>
+                    <input type="number" name="Unit" id="numUnit" size="4" maxlength="4" placeholder="16" />
+                </p>
+
+                <p>
+                    <label for="numStreetNum" id="lblStreetNum">Street #:</label>
+                    <input type="number" name="StreetNum" id="numStreetNum" size="4" maxlength="4" placeholder="23" />
+                </p>
+
+                <p>
+                    <label for="txtStreet" id="lblStreet">Street Name:</label>
+                    <input type="text" name="Street" id="txtStreet" size="30" maxlength="30" placeholder="Storm Ave" />
+                </p>
+
+                <p>
+                    <label for="txtCity" id="lblCity">City:</label>
+                    <input type="text" name="City" id="txtCity" size="30" maxlength="30" placeholder="Toronto" />
+                </p>
+
+                <p>
+                    <label for="txtProv" id="lblProv">Province:</label>
+                    <input type="text" name="Province" id="txtProv" size="30" maxlength="30" list="Prov" placeholder="Ontario" />
+                    <datalist id="Prov">
+                        <option value="Ontario">Ontario</option>
+                        <option value="Quebec">Quebec</option>
+                        <option value="Nova Scotia">Nova Scotia</option>
+                        <option value="New Brunswick">New Brunswick</option>
+                        <option value="British Columbia">British Columbia</option>
+                        <option value="Manitoba">Manitoba</option>
+                        <option value="Prince Edward Island">Prince Edward Island</option>
+                        <option value="Saskatchewan">Saskatchewan</option>
+                        <option value="Alberta">Alberta</option>
+                        <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="txtPostal" id="lblPostal">Postal Code:</label>
+                    <input type="text" name="postalCode" id="txtPostal" size="6" placeholder="A1A 1A1" pattern="[a-zA-Z]{1}[0-9]{1}[a-zA-Z]{1} [0-9]{1}[a-zA-Z]{1}[0-9]{1}" required />
+                </p>
+
+            </fieldset>
+            <br>
+
+
+           
+            
+            <input type="hidden" name="lastName" id="hidLastName" value="Dodge" size="30" maxlength="30" />
+            
+            <input type="hidden" name="studentID" id="hidStudentID" value="100229178" size="30" maxlength="30" />
+            
+
+            <br>
+            <input type="submit" value="Sign Up" />
+            <input type="reset" value="Reset" />
+        </div>
+    </form>
+
+    <br>
+
+    <footer>
+        <span>@Callum Dodge</span>
+    </footer>
+
+</body>
+
+
+
+</html>

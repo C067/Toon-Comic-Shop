@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+@import url('https://fonts.googleapis.com/css?family=Freckle+Face');
+
+body {
+    background-image: url("Images/ToonTown.jpg");
+    max-width: 1200px;
+}
+
+fieldset {
+    border-radius: 10px;
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    width: 435px;
+    padding: 10px, 10px;
+    background-image: url("Images/Comic.jpg");
+}
+
+fieldset legend {
+    font-family: 'Freckle Face', cursive;
+    font-size: 24px;
+    padding: 6px;
+}
+
+fieldset p {
+    padding: 2px;
+}
+
+nav fieldset {
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    width: 200px;
+}
+
+p label {
+    width: 150px;
+    display: block;
+    float: left;
+}
+
+header span {
+	font-family: 'Bangers', cursive;
+    font-size: 65px;
+}
+
+header img {
+    padding-right:10px;
+    padding-left: 10px;
+    margin-top:5px;
+}
+
+footer span {
+    background-image: url("Images/Comic.jpg");
+    border: 1px solid;
+    border-radius: 10px;
+    margin-left: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 360px;
+}
+
+.Main {
+    margin-left: 250px;
+}
+
+.Error {
+    margin-top: 10px;
+    float: right;
+}
+
+.ErrorMessage {
+    color: darkred;
+}
