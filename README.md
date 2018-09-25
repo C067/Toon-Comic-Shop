@@ -2,6 +2,9 @@
 
 Install: 
 
-1. Download Toon-Comic-Shop node_modules repo and add it to the root of the directory.
+1. Download the Toon-Comic-Shop repo.
 
-2. Run the website on any local host.
+2. Using npm install the following modules fs, path, express, body-parser.
+(npm install)
+
+3. Run the website on any local host.
