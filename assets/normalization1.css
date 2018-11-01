@@ -10,7 +10,7 @@ fieldset {
     border-radius: 10px;
     font-family: 'Bangers', cursive;
     font-size: 20px;
-    width: 435px;
+    width: 434px;
     padding: 10px, 10px;
     background-image: url("Images/Comic.jpg");
 }
@@ -70,4 +70,12 @@ footer span {
 
 .ErrorMessage {
     color: darkred;
+}
+
+table, th, td {
+    border: solid 1px;
+}
+
+#ProductDisplay {
+    text-align: left;
 }
