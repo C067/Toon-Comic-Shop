@@ -1,0 +1,30 @@
+[
+    {
+        "Name": "Kingdom Hearts 3",
+        "Price": "79.99",
+        "Description": "",
+        "Type": "Game",
+        "Image": "https://s3.amazonaws.com/comparegame/thumbnails/37962/large.jpg" 
+    },
+    {
+        "Name": "Blue Dragon",
+        "Price": "19.99",
+        "Description": "",
+        "Type": "Game",
+        "Image": "https://www.mobygames.com/images/covers/large/1189306736-00.jpg" 
+    },
+    {
+        "Name": "Digivolving Spirits 01-WarGreymon",
+        "Price": "89.99",
+        "Description": "",
+        "Type": "Toy",
+        "Image": "http://www.actionfiguremania.it/8277-thickbox_default/bandai-digivolving-spirits-wargreymon-af.jpg" 
+    },
+    {
+        "Name": "Digivolving Spirits 01-WarGreymon",
+        "Price": "89.99",
+        "Description": "",
+        "Type": "Toy",
+        "Image": "http://www.actionfiguremania.it/8277-thickbox_default/bandai-digivolving-spirits-wargreymon-af.jpg" 
+    }
+]
