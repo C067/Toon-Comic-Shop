@@ -1,13 +1,27 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 <head>
     <title>Index - Dodge</title>
     <meta charset="uft-8" />
     <link rel="stylesheet" href="../assets/normalization1.css" />
+    <script src="../js/Product.js"></script>
+    <script src="../js/Login.js"></script>
 </head>
 
 <body>
+    <form id="Login" method="POST" action = "/" onsubmit="return formLogin(this);">
+        <p>
+            <label for="txtEmail" id="lblEmail">Email Address: </label>
+            <input type="text" name="Email" id="txtEmail" size="30" maxlength="30" placeholder="JohnSmith@gmail.com" />
+        </p>
+        <p>
+            <label for="txtPassword" id="lblPassword">Password:</label>
+            <input type="password" name="Password" id="txtPassword" size="30" maxlength="30" />
+        </p>
+
+        <input type="submit" value="Login" />
+    </form>
 
     <header>
         <img src="../assets/Images/Bam.png" alt="Bam" height="150" width="150" />
@@ -55,6 +69,22 @@
         </fieldset>
         <br>
 
+        <fieldset>
+            <p> 
+                Product Listing:
+            </p>
+
+            <table id = "ProductListing">
+                <thead>
+                </thead>    
+
+                <tbody id ="ProductDisplay">
+
+                </tbody>
+            </table>
+        </fieldset>
+    
+        <br>
 
     </div>
 
